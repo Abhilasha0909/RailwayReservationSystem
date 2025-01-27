@@ -1,36 +1,37 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Confirmation.css';
 
 function Confirmation() {
   return (
-    <div>
-      <header>
-        <h1>Booking Confirmation</h1>
-        <nav>
-          <Link to="/">Home</Link>
-          <Link to="/account">My Account</Link>
-          <Link to="/help">Help</Link>
-          <Link to="/contact">Contact Us</Link>
+    <div className="confirmation-container">
+      <header className="header">
+        <h1 className="title">Booking Confirmation</h1>
+        <nav className="nav">
+          <Link to="/" className="nav-link">Home</Link>
+          <Link to="/account" className="nav-link">My Account</Link>
+          <Link to="/help" className="nav-link">Help</Link>
+          <Link to="/contact" className="nav-link">Contact Us</Link>
         </nav>
       </header>
-      <main>
-        <section id="confirmation-message">
-          <h2>Booking Confirmed!</h2>
-          <p>Your booking reference number is: ABC123</p>
-          <p>Download your e-ticket or receive it via email/SMS.</p>
-          <button onClick={() => window.print()}>Print E-Ticket</button>
+      <main className="main">
+        <section id="confirmation-message" className="confirmation-section">
+          <h2 className="section-title">Booking Confirmed!</h2>
+          <p className="confirmation-text">Your booking reference number is: <strong>ABC123</strong></p>
+          <p className="confirmation-text">Download your e-ticket or receive it via email/SMS.</p>
+          <button onClick={() => window.print()} className="print-button">Print E-Ticket</button>
         </section>
 
-        <section id="booking-summary">
-          <h3>Booking Summary</h3>
-          <p>Train: 1234</p>
-          <p>Seats: 2A, 2B</p>
-          <p>Passenger: John Doe</p>
-          <p>Fare: $100</p>
+        <section id="booking-summary" className="summary-section">
+          <h3 className="section-title">Booking Summary</h3>
+          <p className="summary-text">Train: <strong>1234</strong></p>
+          <p className="summary-text">Seats: <strong>2A, 2B</strong></p>
+          <p className="summary-text">Passenger: <strong>John Doe</strong></p>
+          <p className="summary-text">Fare: <strong>$100</strong></p>
         </section>
       </main>
-      <footer>
-        <p>&copy; 2023 Railway Reservation System</p>
+      <footer className="footer">
+        <p className="footer-text">&copy; 2023 Railway Reservation System</p>
       </footer>
     </div>
   );
