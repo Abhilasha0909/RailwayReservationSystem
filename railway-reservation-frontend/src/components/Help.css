@@ -1,0 +1,90 @@
+/* Help.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.help-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #343a40;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.nav {
+  margin-top: 10px;
+}
+
+.nav-link {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.faq-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #343a40;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-question {
+  font-size: 1.4rem;
+  color: #343a40;
+  margin-bottom: 10px;
+}
+
+.faq-answer {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.footer {
+  background-color: #343a40;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-text {
+  margin: 0;
+}
